@@ -61,6 +61,17 @@ nav a:hover{
     color: blue;
 }
 
+/*űrlap formázása*/
+
+#nevek{
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+#nevek label{
+    text-align: right;
+    padding-right: 5px;
+}
+
 @media screen and (max-width: 600px){
     main {
         background: red;
@@ -82,6 +93,14 @@ nav a:hover{
     nav ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #nevek{
+        grid-template-columns: auto;
+    }
+
+    #nevek label{
+        text-align: left;
     }
 
 }
